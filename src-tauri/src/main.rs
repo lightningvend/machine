@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-  lightning_vend_machine_lib::run()
+    lightning_vend_machine_lib::run()
 }

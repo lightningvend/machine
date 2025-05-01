@@ -41,6 +41,9 @@ jobs:
           sudo apt-get update
           sudo apt install libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev libayatana-appindicator3-dev librsvg2-dev
 
+      - name: Create empty 'dist' directory
+        run: mkdir dist
+
       - name: Run rustfmt check
         run: cargo fmt --all -- --check
         working-directory: src-tauri
