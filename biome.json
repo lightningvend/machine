@@ -1,18 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "vcs": {
-    "enabled": false,
+    "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": false
-  },
-  "files": {
-    "ignoreUnknown": false,
-    "ignore": []
+    "useIgnoreFile": true
   },
   "formatter": {
     "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 2
+    "indentStyle": "space"
   },
   "organizeImports": {
     "enabled": true
@@ -20,34 +15,36 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
-      "correctness": {
-        "useHookAtTopLevel": "error"
-      },
+      "all": true,
       "nursery": {
-        "useGoogleFontDisplay": "error",
-        "noDocumentImportInPage": "error",
-        "noHeadElement": "error",
-        "noHeadImportInDocument": "error",
-        "noImgElement": "off",
-        "useComponentExportOnlyModules": {
+        "all": true,
+        "useExplicitType": "off",
+        "useConsistentCurlyBraces": "off",
+        "useSortedClasses": {
           "level": "error",
-          "options": {
-            "allowExportNames": ["metadata"]
-          }
+          "fix": "safe",
+          "options": {}
         }
-      }
-    }
-  },
-  "css": {
-    "formatter": {
-      "quoteStyle": "double"
+      },
+      "style": {
+        "noImplicitBoolean": "off",
+        "noDefaultExport": "off"
+      },
+      "suspicious": {
+        "noReactSpecificProps": "off",
+        "noConsole": "off"
+      },
+      "a11y": {},
+      "complexity": {},
+      "correctness": {
+        "noUndeclaredVariables": "off"
+      },
+      "performance": {}
     }
   },
   "javascript": {
     "formatter": {
       "quoteStyle": "double"
-    },
-    "globals": []
+    }
   }
 }
