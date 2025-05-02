@@ -18,6 +18,7 @@
       "all": true,
       "nursery": {
         "all": true,
+        "noStaticElementInteractions": "off",
         "useExplicitType": "off",
         "useConsistentCurlyBraces": "off",
         "useSortedClasses": {
@@ -34,7 +35,10 @@
         "noReactSpecificProps": "off",
         "noConsole": "off"
       },
-      "a11y": {},
+      "a11y": {
+        "useButtonType": "off",
+        "useKeyWithClickEvents": "off"
+      },
       "complexity": {},
       "correctness": {
         "noUndeclaredVariables": "off"
