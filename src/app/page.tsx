@@ -33,7 +33,7 @@ export default function Home() {
         // Cancel previous `getLightningInvoice` if a new product is set.
         switchMap((product) =>
           product
-            ? from(getLightningInvoice(product.price)) // TODO: Handle if `getLightningInvoice` errors.
+            ? from(getLightningInvoice(product.id)) // TODO: Handle if `getLightningInvoice` errors.
             : of(null),
         ),
       )

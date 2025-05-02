@@ -1,7 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 
-export const getLightningInvoice = async (amountSats: number) => {
-  return await invoke<string>("get_lightning_invoice", { amountSats });
+export const getLightningInvoice = async (productId: string) => {
+  return await invoke<string>("get_lightning_invoice", { productId });
 };
 
 export const getProducts = async () => {
