@@ -46,16 +46,7 @@ export default function Home() {
 
   // Check system preference for dark mode on component mount and set viewport.
   useEffect(() => {
-    if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) {
-      setDarkMode(true);
-    }
-
-    // Set viewport meta tag for landscape optimization.
-    const meta = document.createElement("meta");
-    meta.name = "viewport";
-    meta.content =
-      "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
-    document.getElementsByTagName("head")[0].appendChild(meta);
+    setDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
   }, []);
 
   useEffect(() => {
