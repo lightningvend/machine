@@ -5,14 +5,14 @@ use tokio::time::sleep;
 #[tauri::command]
 async fn get_lightning_invoice(_product_id: String) -> String {
     // TODO: Implement via fedimint client.
-    sleep(Duration::from_secs(2)).await;
+    sleep(Duration::from_secs(1)).await;
     "lnbc2500u1pvjluezpp5qqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqypqdq5xysxxatsyp3k7enxv4jsxqzpuaztrnwngzn3kdzw5hydlzf03qdgm2hdq27cqv3agm2awhz5se903vruatfhq77w3ls4evs3ch9zw97j25emudupq63nyw24cg27h2rspfj9srp".to_string()
 }
 
 #[tauri::command]
 async fn get_products() -> Vec<Product> {
     // TODO: Implement via fedimint client.
-    sleep(Duration::from_secs(2)).await;
+    sleep(Duration::from_secs(1)).await;
     vec![
         Product {
             id: "1".to_string(),
