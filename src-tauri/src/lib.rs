@@ -25,6 +25,30 @@ async fn get_products() -> Vec<Product> {
             name: "Fiji Water".to_string(),
             price: 80,
             image: "https://m.media-amazon.com/images/I/61jGvBW0nSL._SL1500_.jpg".to_string(),
+        },
+        Product {
+            id: "3".to_string(),
+            name: "Red Bull".to_string(),
+            price: 120,
+            image: "https://via.placeholder.com/300x300/ffffff/000000?text=Red+Bull".to_string(),
+        },
+        Product {
+            id: "4".to_string(),
+            name: "Kit Kat".to_string(),
+            price: 90,
+            image: "https://via.placeholder.com/300x300/ffffff/000000?text=Kit+Kat".to_string(),
+        },
+        Product {
+            id: "5".to_string(),
+            name: "Lay's Classic".to_string(),
+            price: 75,
+            image: "https://via.placeholder.com/300x300/ffffff/000000?text=Lays+Classic".to_string(),
+        },
+        Product {
+            id: "6".to_string(),
+            name: "Starbucks Coffee".to_string(),
+            price: 150,
+            image: "https://via.placeholder.com/300x300/ffffff/000000?text=Starbucks+Coffee".to_string(),
         }
     ]
 }
